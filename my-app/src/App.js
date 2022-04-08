@@ -21,7 +21,11 @@ function Timer(props) {
       setCountdown(convertTime(props.t));
     }, 1000);
   });
-  return  <p>{props.text} {days}d {hours}h {minutes}m {seconds}s</p>
+  if (seconds < 0) {
+    return <p>{props.text} :)</p>
+  } else {
+    return  <p>{props.text} {days}d {hours}h {minutes}m {seconds}s</p>
+  }
 }
 
 function App() {
