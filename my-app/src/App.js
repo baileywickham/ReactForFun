@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router';
 
 
 
@@ -29,13 +30,19 @@ function Timer(props) {
 }
 
 function App() {
+  const nav = useNavigate()
+  const onClick = (e) => {
+    nav('/login')
+  }
   return (
     <div className="App">
       <header className="App-header">
         <h1>How long until Bailey sees Nina?</h1>
         <Timer text={"For two weeks of fun: "} t={new Date("Mar 27, 2022, 12:32:00").getTime()}></Timer>
         <Timer text={"For more fun in Hawai'i: "} t={new Date("April 27, 2022, 14:15:00").getTime()}></Timer>
+        <Timer text={"In Oregon in the sun: "} t={new Date("June 16, 2022, 14:15:00").getTime()}></Timer>
         <Timer text={"Indefinitely: "} t={new Date("Jul 6, 2022, 9:40:00").getTime()}></Timer>
+        <p onClick={onClick}>top secret link</p>
       </header>
     </div>
   );
