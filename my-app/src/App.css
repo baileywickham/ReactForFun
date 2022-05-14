@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.link {
+  color: #61DAFB
+}
+
 .button {
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -57,7 +61,6 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 100px;
   padding-left: 400px;
   padding-right: 400px;
 }

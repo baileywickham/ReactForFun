@@ -42,7 +42,7 @@ function App() {
         <Timer text={"For more fun in Hawai'i: "} t={new Date("April 27, 2022, 14:15:00").getTime()}></Timer>
         <Timer text={"In Oregon in the sun: "} t={new Date("June 16, 2022, 14:15:00").getTime()}></Timer>
         <Timer text={"Indefinitely: "} t={new Date("Jul 6, 2022, 9:40:00").getTime()}></Timer>
-        <p onClick={onClick}>top secret link</p>
+        <p onClick={onClick}>click here nina</p>
       </header>
     </div>
   );
